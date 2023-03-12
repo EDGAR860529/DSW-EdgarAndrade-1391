@@ -1,28 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+	<title>Box Model - Ejemplo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<style>
-    * {
-        text-align: center;
-        background-color: blueviolet;
-        color: white;
-        
-    }
-</style>
+
 <body>
-<h1> Bienvenido a mi sitio web</h1>
-<h2> Proyecto de sitio Web 2023 - 16-01 </h2>
-<hr>
-<h3> nombre: Edgar Fabian Andrade Osorio</h3> 
-<h3>fecha de creación: 18 de febrero de 2023</h3> 
-<hr>
-<p> Mis datos de contacto son: <br>
-skipe: edgar.f.andrade <br>
-telefono: 3116752181 <br>
-email: efandradeo@unadvirtual.edu.co <br>
- </p>  
-</body>
-</html>
+	<header>
+		<h1>Box Model</h1>
+		<nav>
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#tema">Tema</a></li>
+				<li><a href="#mockup">Mockup</a></li>
+				<li><a href="#acerca-de">Acerca de</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="inicio">
+			<h2>Inicio</h2>
+			<p>El modelo de caja o Box Model es un concepto importante en CSS que describe cómo se representan
+				visualmente los elementos HTML. Cada elemento HTML se representa como una caja rectangular, que tiene un
+				contenido, padding, borde y margen.</p>
+		</section>
+		<section id="tema">
+			<h2>Tema - El modelo de caja</h2>
+			<p>El modelo de caja se compone de cuatro elementos:</p>
+			<ul>
+				<li>Contenido (Content): Es el contenido de la caja, que puede ser texto, imagen u otros elementos.</li>
+				<li>Padding: Espacio entre el contenido y el borde. Especificado con la propiedad CSS
+					<code>padding</code>.
+				</li>
+				<li>Borde (Border): Un borde que rodea el contenido y el padding. Especificado con la propiedad CSS
+					<code>border</code>.
+				</li>
+				<li>Margen (Margin): Espacio entre el borde y los elementos circundantes. Especificado con la propiedad
+					CSS <code>margin</code>.</li>
+			</ul>
+			<p>Estos cuatro elementos en conjunto forman la caja completa. Es importante tener en cuenta que los valores
+				de las propiedades de padding, border y margin se suman al tamaño total de la caja.</p>
+			<p>El modelo de caja puede ser difícil de entender al principio, pero es importante comprender cómo funciona
+				para poder crear diseños web sólidos y coherentes.</p>
+			<img src="box-model.png" alt="Ilustración del modelo de caja">
+			<p>Imagen tomada de: <a
+					href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">Mozilla
+					Developer Network (MDN)</a></p>
+		</section>
+		<section id="mockup">
+			<h2>Mockup</h2>
+			<img src="mockup.png" alt="Mockup de la página web">
+		</section>
+		<section id="acerca-de">
+			<h2>Acerca de</h2>
+			<p>Este sitio web fue creado por Edgar Andrade Osorio como parte de un proyecto para demostrar habilidades
+				en diseño web.</p>
+			<p> Mis datos de contacto son: <br>
+				skipe: edgar.f.andrade <br>
+				telefono: 3116752181 <br>
+				email: efandradeo@unadvirtual.edu.co <br>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 | Web Design | Última actualización: 11 de marzo de 2023</p>
+	</footer>
+	<div id="referencias">
+		<h2>Referencias Bibliográficas</h2>
+		<ul>
+			<li>Mozilla Developer Network (MDN). (n.d.). The box model. Retrieved March 11, 2023, from
+				https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks
